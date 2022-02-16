@@ -24,14 +24,44 @@
 
 
 
-    <style> div {border: thin dotted red;}</style>
+    <style>
+    div {border: thin dotted blue;}
+    * {
+      box-sizing: border-box;
+    }
+    .header {
+      border: 1px solid blue;
+    }
+    .menu {
+      width: 25%;
+      float: left;
+      padding: 15px;
+      border: 1px solid blue;
+    }
+    .main {
+      width: 50%;
+      float: left;
+      padding: 15px;
+      border: 1px solid blue;
+    }
+    .aside {
+      width: 25%;
+      float: left;
+      padding:15px
+      border: 1px solid blue;
+    }
+    .footer{
+      border: 1px solid blue;
+      padding: 15px;
+    }
+    </style>
 
   </head>
   <body>
-      <header>INDEX file as Flexbox, 3-column</header>
-      <nav><h3>Navigation with no viewport in a h3-tag</h3></nav>
-      <aside><p>This is the aside space with no view port and a p-tag</p></aside>
-      <section><h3 style="font size:2.5vw">Section 1</h3>
+      <header class="header">INDEX file as Flexbox, 3-column</header>
+      <nav class="menu"><h3>Navigation with no viewport in a h3-tag</h3></nav>
+      <aside class="aside"><p>This is the aside space with no view port and a p-tag</p></aside>
+      <section class="main"><h3 style="font size:2.5vw">Section 1</h3>
         <article>
           <p>Here are hyperlinks to the mandatory Experiment pages</p>
           <!-- See the HTML .txt documents for a summary-->
@@ -49,7 +79,7 @@
         </article>
       </section>
   </body>
-  <footer>
+  <footer class="footer">
     <blockquote cite="https://www.goodhousekeeping.com/health/wellness/g2401/inspirational-quotes/"><!-- Date Accessed 20220208--></blockquote>
     <p>
       <strong>I have learned not to allow rejection to move me.</strong>
